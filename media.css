@@ -102,14 +102,8 @@
     }
 
     .outer-container {
-        /* height: 100vh;
-        width: 100vw; */
         display: flex;
-        border: solid blue 4px;
-        /* padding: 5%; */
-
-        /* margin-left: 1rem;
-        margin-right: 1rem; */
+        /* border: solid blue 4px; */
     }
 
 
@@ -120,26 +114,7 @@
         flex-direction: column;
     }
 
-    /* border: 2px solid black; */
-    /* height: 100vh; */
 
-
-    /* .profile-pic-container {
-        display: flex;
-        justify-content: center;
-        height: 260px;
-        width: auto;
-        margin-bottom: 3.5%;
-    }
-
-    .profile-text-container {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding-bottom: 3vh;
-        padding-top: 2vh;
-    } */
-
-  
     /* MOBILE ABOUT */
     #intro {
         margin: 0;
