@@ -321,11 +321,22 @@ section {
     width: 80%;
 }
 
+
 .experience-inner-container:hover {
     cursor: pointer;
     transition:  all 300ms ease;
     transform: scale(1.025);
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
+}
+
+.experience-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.experience-desc {
+    margin-left: auto
 }
 
 .dialog {
@@ -334,15 +345,16 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    text-align: center;
+    /* text-align: center; */
     border-radius: 30px;
     cursor: default;
 
-    height: 50%;
-    width: 50%;
+    height: 70vh;
+    width: 70vw;
     background-color: var(--extra-light-pink);
     outline: none;
     color: black;
+
     /* color: var(--dark-pink); */
 }
 
@@ -352,7 +364,11 @@ section {
     margin: 0px;
 }
 
-#close-zetron-dialog:hover, #close-INO-dialog:hover, #close-xfdc-dialog:hover {
+.dialog-bullets{
+    margin: 2rem;
+}
+
+#close-zetron-dialog:hover, #close-INO-dialog:hover, #close-nrc-dialog:hover {
     cursor: pointer;
 }
 
