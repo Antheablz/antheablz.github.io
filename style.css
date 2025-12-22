@@ -153,7 +153,8 @@ nav {
     width: 40vh;
     background-color: var(--shear-pink);
     border-radius: 30px;
-    border: var(--dark-pink) 0.1rem solid;
+    /* border: var(--dark-pink) 0.1rem solid; */
+    border: black 0.1rem solid;
 }
 
 #blur-container.blur {
@@ -177,7 +178,8 @@ nav {
 .mobile-icon:before,
 .mobile-icon:after,
 .mobile-icon div {
-    background-color: var(--dark-pink);
+    /* background-color: var(--dark-pink); */
+    background-color: black;
     content: "";
     display: block;
     height: 5px;
@@ -194,7 +196,6 @@ nav {
 #mobile-hamburger.open div {
     transform: scale(0);
 }
-
 
 
 /* SECTION */
@@ -265,9 +266,9 @@ section {
     /* color: var(--dark-pink); */
 }
 
-.about-header {
+/* .about-header {
     margin-left: 1rem;
-}
+} */
 
 .overview-container {
     display: flex;
@@ -281,10 +282,8 @@ section {
 
 .horizontal-container {
     display: flex;
-    /* align-items: center; */
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 1rem; */
 }
 
 .text-outline {
@@ -321,7 +320,6 @@ section {
     width: 80%;
 }
 
-
 .experience-inner-container:hover {
     cursor: pointer;
     transition:  all 300ms ease;
@@ -336,7 +334,9 @@ section {
 }
 
 .experience-desc {
-    margin-left: auto
+    width: 50%; 
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .dialog {
@@ -385,17 +385,16 @@ section {
 }
 
 .read-more-icon {
-    height: 2rem;
+    display: none;
+    /* height: 2rem;
     margin-left: auto;
-    align-self: flex-start;
+    align-self: flex-start; */
 }
 
 /* PROJECTS SECTION */
 #projects {
-    /* display: block; */
-    /* display: flex; */
-}
 
+}
 
 
 /* CONTACT SERCTION */

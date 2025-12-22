@@ -8,14 +8,35 @@
         display: flex;
     }
 
+    section {
+        display: flex;
+        height: 115vh;
+    }
+
+    .outer-container {
+        /* height: 100vh;
+        width: 100vw; */
+        display: flex;
+        border: solid blue 4px;
+        /* padding: 5%; */
+
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+    }
 
 
     /* MOBILE PROFILE */
     #profile {
         /* display: block; */
+        display: flex;
+        flex-direction: column;
     }
 
-    .profile-pic-container {
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+
+
+    /* .profile-pic-container {
         display: flex;
         justify-content: center;
         height: 260px;
@@ -28,46 +49,70 @@
         margin-right: 1rem;
         padding-bottom: 3vh;
         padding-top: 2vh;
-    }
+    } */
 
 
 
     /* MOBILE ABOUT */
-    .about-header {
+    /* .about-header {
         margin-left: 0;
-    }
+    } */
 
-    .outer-container {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
+  
+    /* MOBILE ABOUT */
     #intro {
         margin: 0;
         font-size: medium;
     }
 
-    .horizontal-container, .overview-container {
+    .overview-container {
+        margin: 1.5rem;
+    }
+
+    .horizontal-container {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        margin-bottom: .5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem;
     }
+
+    .text-outline {
+        border-radius: 30px;
+        padding: 10%;
+        border: black 0.1rem solid;
+    }
+
 
     /* MOBILE EXPERIENCE */
     .experience-inner-container {
-        display: block;
-        text-align: center;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .experience-inner-container p {
-        margin: 1rem;
-        border-radius: 20px;
+    .experience-desc {
+        display: none;
+       
     }
 
-    .experience-inner-container h5, .experience-inner-container h3{
+    .experience-titles {
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .read-more-icon {
+        display: flex;
+        height: 2rem;
+    }
+    
+
+    /* .experience-inner-container h5, .experience-inner-container h3{
         text-decoration: underline;
-    }
+    } */
 
 
 }
