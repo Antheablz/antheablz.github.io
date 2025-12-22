@@ -9,7 +9,7 @@
 </head>
 <body id="body-id">
     <nav id="desktop-nav">
-        <div class="logo">Anthea Blais</div>
+        <!-- <div class="logo">Anthea Blais</div> -->
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -37,181 +37,188 @@
 
 
 <!-- HOME SECTION-->
-    <div id="blur-container"><!-- BLUR CONTAINER START -->
+    <div id="blur-container"> <!--BLUR CONTAINER START -->
 
-    <section id="profile">
-        <div class="profile-pic-container">
-            <img id="desktop-pic" src="./assets/profile-pic.jpeg" alt="Anthea Blais" draggable="false"/>
-        </div>
-        <div class="profile-text-container">
-            <p> Hello, I'm</p>
-            <h1 class="title">Anthea Blais</h1>
-            <p>Computer Science Student</p>
-            <div class="btn-container">
-                <button class="btn" onclick="window.open('./assets/Resume.pdf')">Resume</button>
-                <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
+        <section id="profile">
+            <div class="outer-container" style="background-color: var(--medium-pink); gap: 2.5rem;">
+
+                
+                <h1 class="title">Hello, I'm Anthea Blais.</h1>
+
+                <h2>I'm a recent Computer Science graduate and aspiring Software Developer!</h2>
+                <div class="btn-container">
+                    <button class="btn" onclick="window.open('./assets/Resume.pdf')">Resume</button>
+                    <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <a href="http://www.linkedin.com/in/antheablais">
+                        <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" draggable="false"/>
+                    </a>
+
+                    <a href="https://github.com/Antheablz">
+                        <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" draggable="false"/>
+                    </a>
+                </div>
+
             </div>
-            <div id="socials-container">
+        </section>
+
+    <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="outer-container" style="background-color: var(--extra-light-pink);">
+                <h1 class="title">About Me</h1>
+
+                <div class="overview-container">
+                    <h4 id="intro">Welcome to my portfolio! I currently finishing up my Computer Science degree at the 
+                        Univeristy of Victoria. When I am not coding, I'm often found biking to dance
+                        classes, baking sourdough bread, or exploring new hiking spots. I invite you to delve into a piece 
+                        of my world, and join me on my programming journey!
+                    </h4>
+                </div>
+
+                <div class="horizontal-container">
+
+                    <div class="overview-container text-outline">
+                        <div class="horizontal-container">
+                            <img src="./assets/education.png" alt="education img" class="icon" draggable="false"/>
+                            <h3 class="about-header">Education</h3>
+                        </div>
+                        <p >B.Sc. Computer Science from University of Victoria</p>
+                    </div>
+
+                    <div class="overview-container text-outline">
+                        <div class="horizontal-container">
+                            <img src="./assets/experience.png" alt="experience img" class="icon" draggable="false"/>
+                            <h3 class="about-header">Skills</h3>
+                        </div>
+                        <p>C, Python, C++, JavaScript, HTML, CSS, Git, Linux, PostgreSQL, SQLite </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience">
+            <div class="outer-container" style="background-color: var(--medium-pink);">
+                <h1 class="title">Work Experience</h1>
+
+                <div class="experience-inner-container" onclick="openDialog('zetron-dialog')">
+                    <div>
+                        <h3>Software Engineer Co-op</h3>
+                        <h5>Zetron, Victoria, BC</h5>
+                        <h5>Sep 2023 - Aug 2024</h5>
+                    </div>
+                    <p>Section explaining what I did at Zetron.</p>
+                    <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
+                </div>
+
+                <div class="experience-inner-container" onclick="openDialog('INO-dialog')">
+                    <div>
+                        <h3>In-N-Out</h3>
+                        <h5>Livermore, CA</h5>
+                        <h5>June 2017 - Sep 2023</h5>
+                    </div>
+                    <p>Section explaining what I did at In-N-Out</p>
+                    <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
+                </div>
+
+                <div class="experience-inner-container" onclick="openDialog('xfdc-dialog')">
+                    <div>
+                        <h3>XFDC</h3>
+                        <h5>Livermore, CA</h5>
+                        <h5>Sep 2016 - Dec 2020</h5>
+                    </div>
+                    <p>Dance Teacher Assistant</p>
+                    <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div class="outer-container" style="background-color: var(--extra-light-pink);">
+                <h1 class="title">Projects</h1>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="outer-container" style="background-color: var(--medium-pink);">
+                <h1 class="title">Contact</h1>
+            </div>
+            <!-- <h1 class="title">Contact</h1>
+            <div class="outer-container">
+                <form id="contact-form" autocomplete="off">
+                    <div class="input-container">
+                        <input type="text" class="text-outline contact-text"id="name" value="" placeholder="Your Name (required)" required />
+                        <div class="err-msg">Name Required</div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="subject" class="text-outline contact-text" id="subject" value="" placeholder="Subject (required)" required/>
+                        <div class="err-msg">Subject Required</div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="email" class="text-outline contact-text" id="email" value="" placeholder="Your Email Address (required)" required/>
+                        <div class="err-msg">Email Address Required</div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <textarea id="message" class="text-outline contact-text" rows="4" value="" placeholder="Message (required)" required></textarea>
+                        <div class="err-msg">Message Required</div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" formnovalidate onclick="checkInputFields()">Send</button>
+                    </div>
+                    
+                </form>
+            </div> -->
+        </section>
+
+        <!-- DIALOGS -->
+        <dialog id="zetron-dialog" class="dialog">
+            <div>
+                zetron dialog
+            </div>
+            <button id="close-zetron-dialog" class="btn" style="outline: none;" onclick="closeDialog('zetron-dialog')">close</button>
+        </dialog>
+
+        <dialog id="INO-dialog" class="dialog">
+            <div>
+                in-n-out dialog
+            </div>
+            <button id="close-INO-dialog" class="btn" style="outline: none;" onclick="closeDialog('INO-dialog')">close</button>
+        </dialog>
+
+        <dialog id="xfdc-dialog" class="dialog">
+            <div> xfdc dialog
+                <ul>
+                    <li>bullet point 1</li>
+                    <li>bullet point 2</li>
+                </ul>
+            </div>
+            
+            <button id="close-xfdc-dialog" class="btn" style="outline: none;" onclick="closeDialog('xfdc-dialog')">close</button>
+        </dialog>
+
+
+        <footer class="footer">
+            <div id="socials-container" style="margin-left: 1rem;">
                 <a href="http://www.linkedin.com/in/antheablais">
                     <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" draggable="false"/>
                 </a>
-
                 <a href="https://github.com/Antheablz">
                     <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" draggable="false"/>
                 </a>
             </div>
-        </div>
-    </section>
 
-<!-- ABOUT SECTION -->
-    <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="outer-container">
-
-            <div class="overview-container">
-                <h4 id="intro">Welcome to my portfolio! I am a Computer Science student at the University
-                    of Victoria, currently enriching my software engineering skills through a co-op with a focus on
-                    embedded systems and full-stack development. When I am not coding, I'm often found dancing or
-                    choreographing for the Uvic dance team. Additionally, I love spending time outdoors exploring
-                    Vancouver Island. I invite you to delve into a piece of my world, and join me on my programming journey!
-                </h4>
-            </div>
-
-            <div class="horizontal-container">
-                <div class="overview-container text-outline">
-                    <div class="horizontal-container">
-                        <img src="./assets/experience.png" alt="experience img" class="icon" draggable="false"/>
-                        <h3 class="about-header">Experience</h3>
-                    </div>
-                    <p>1+ year embedded systems development experience</p>
-                </div>
-
-                <div class="overview-container text-outline">
-                    <div class="horizontal-container">
-                        <img src="./assets/education.png" alt="education img" class="icon" draggable="false"/>
-                        <h3 class="about-header">Education</h3>
-                    </div>
-                    <p>B.Sc. Computer Science from University of Victoria</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience">
-        <h1 class="title">Work Experience</h1>
-        <div class="outer-container" style="background-color: var(--medium-pink);">
-
-            <div class="experience-inner-container" onclick="openDialog('zetron-dialog')">
-                <div>
-                    <h3>Software Engineer Co-op</h3>
-                    <h5>Zetron, Victoria, BC</h5>
-                    <h5>Sep 2023 - Aug 2024</h5>
-                </div>
-                <p>Section explaining what I did at Zetron.</p>
-                <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
-            </div>
-
-            <div class="experience-inner-container" onclick="openDialog('INO-dialog')">
-                <div>
-                    <h3>In-N-Out</h3>
-                    <h5>Livermore, CA</h5>
-                    <h5>June 2017 - Sep 2023</h5>
-                </div>
-                <p>Section explaining what I did at In-N-Out</p>
-                <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
-            </div>
-
-            <div class="experience-inner-container" onclick="openDialog('xfdc-dialog')">
-                <div>
-                    <h3>XFDC</h3>
-                    <h5>Livermore, CA</h5>
-                    <h5>Sep 2016 - Dec 2020</h5>
-                </div>
-                <p>Dance Teacher Assistant</p>
-                <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" style="margin-bottom: 3rem;">
-        <h1 class="title">Contact</h1>
-        <div class="outer-container">
-            <form id="contact-form" autocomplete="off">
-                <div class="input-container">
-                    <input type="text" class="text-outline contact-text"id="name" value="" placeholder="Your Name (required)" required />
-                    <div class="err-msg">Name Required</div>
-                </div>
-                
-                <div class="input-container">
-                    <input type="subject" class="text-outline contact-text" id="subject" value="" placeholder="Subject (required)" required/>
-                    <div class="err-msg">Subject Required</div>
-                </div>
-                
-                <div class="input-container">
-                    <input type="email" class="text-outline contact-text" id="email" value="" placeholder="Your Email Address (required)" required/>
-                    <div class="err-msg">Email Address Required</div>
-                </div>
-                
-                <div class="input-container">
-                    <textarea id="message" class="text-outline contact-text" rows="4" value="" placeholder="Message (required)" required></textarea>
-                    <div class="err-msg">Message Required</div>
-                </div>
-                <div class="btn-container">
-                    <button class="btn" formnovalidate onclick="checkInputFields()">Send</button>
-                </div>
-                
-            </form>
-        </div>
-    </section>
-
-    <!-- DIALOGS -->
-    <dialog id="zetron-dialog" class="dialog">
-        <div>
-            zetron dialog
-        </div>
-        <button id="close-zetron-dialog" class="btn" style="outline: none;" onclick="closeDialog('zetron-dialog')">close</button>
-    </dialog>
-
-    <dialog id="INO-dialog" class="dialog">
-        <div>
-            in-n-out dialog
-        </div>
-        <button id="close-INO-dialog" class="btn" style="outline: none;" onclick="closeDialog('INO-dialog')">close</button>
-    </dialog>
-
-    <dialog id="xfdc-dialog" class="dialog">
-        <div> xfdc dialog
-            <ul>
-                <li>bullet point 1</li>
-                <li>bullet point 2</li>
-            </ul>
-        </div>
-        
-        <button id="close-xfdc-dialog" class="btn" style="outline: none;" onclick="closeDialog('xfdc-dialog')">close</button>
-    </dialog>
-
-
-    <footer class="footer">
-        <div id="socials-container" style="margin-left: 1rem;">
-            <a href="http://www.linkedin.com/in/antheablais">
-                <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" draggable="false"/>
-            </a>
-            <a href="https://github.com/Antheablz">
-                <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" draggable="false"/>
-            </a>
-        </div>
-
-        <div id="top" onclick="scrollToStart()">Back to the Top</div>
-    </footer>
+            <div id="top" onclick="scrollToStart()">Back to the Top</div>
+        </footer>
 
     </div> <!-- BLUR CONTAINER END -->
     <script src="script.js"></script>

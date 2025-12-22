@@ -42,7 +42,7 @@ a, .btn {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .btn {
@@ -51,16 +51,18 @@ a, .btn {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    color: var(--dark-pink);
-    background-color: var(--extra-light-pink);
-    border: var(--dark-pink) 0.1rem solid;
+    /* color: var(--dark-pink); */
+    /* background-color: var(--extra-light-pink); */
+    /* border: var(--dark-pink) 0.1rem solid; */
+
+    background-color: var(--medium-pink);
 }
 
 .btn:hover {
     cursor: pointer;
-    color: white;
-    background-color: var(--dark-pink);
-    border: var(--dark-pink) 0.1rem solid;
+    /* color: white; */
+    /* background-color: var(--dark-pink); */
+    /* border: var(--dark-pink) 0.1rem solid; */
     box-shadow: .5vh .5vh 1.5vh 0 var(--shadow);
     transform: scale(1.05);
 }
@@ -69,50 +71,42 @@ a, .btn {
 
 /* DESKTOP NAV */
 a {
-    color: var(--dark-pink);
+    /* color: var(--dark-pink); */
+    color: black;
     text-decoration: none;
     text-decoration-color: white;
+    font-size: large;
 }
 
 a:hover {
-    color: var(--medium-pink);
+    /* color: var(--medium-pink); */
     text-decoration: underline;
-    text-decoration-color: var(--medium-pink);
-}
-
-.logo {
-    font-size: 1.5rem;
-    color: var(--dark-pink);
-    cursor: default;
-}
-
-nav, .nav-links {
-    display: flex;
+    /* text-decoration-color: var(--medium-pink); */
 }
 
 nav {
-    
-    /*background-color: var(--extra-light-pink);
+    display: flex;
+    background-color: var(--extra-light-pink);
     border-radius: 30px;
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-    margin: 1rem;
-    margin-bottom: 1rem;
-    border: var(--dark-pink) 0.1rem solid;
-    border-radius: 30px;*/
-
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
-    margin: 1.5rem;
+    height: 10vh;
+    margin: 1.5%; 
 }
 
 .nav-links {
+    display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
 
-
+#desktop-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}
 
 /* MOBILE MENU */
 #mobile-nav {
@@ -138,7 +132,8 @@ nav {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--dark-pink);
+    /* color: var(--dark-pink); */
+    color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -204,14 +199,28 @@ nav {
 
 /* SECTION */
 section {
-    color: var(--dark-pink);
-    /*padding-top: 5vh;*/
-    box-sizing: border-box;
-    min-height: fit-content;
     display: flex;
     justify-content: center;
-    margin-bottom: 15rem;
-    cursor: default;
+    align-items: center;
+    text-align: center;
+    margin: 1.5%;
+
+    /* border: 2px solid black; */
+    height: 100vh;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 30px;
+    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
+
+    height: 100%;
+    width: 100%;
+
+    justify-content: center; /* horizontal */
+    align-items: center;  /* vertical */
 }
 
 
@@ -234,22 +243,7 @@ section {
 }
 
 #profile {
-    gap: 10rem;
-}
-
-.profile-pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-}
-
-.profile-text-container {
-    background-color: var(--extra-light-pink);
-    border-radius: 30px;
-    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-
-    align-content: center;
-    text-align: center;
+    /* color: var(--extra-light-pink); */
 }
 
 #socials-container {
@@ -260,26 +254,15 @@ section {
 
 .title {
     font-size: 2.5rem;
-    text-align: center;
-    padding-bottom: 3%;
+    /* text-align: center; */
+    /* padding-bottom: 1.5rem; */
 }
 
 
 
 /* ABOUT SECTION*/
 #about {
-    display: block;
-}
-
-.outer-container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--extra-light-pink);
-    align-items: center;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
-    border-radius: 30px;
-    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
+    /* color: var(--dark-pink); */
 }
 
 .about-header {
@@ -287,27 +270,34 @@ section {
 }
 
 .overview-container {
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* horizontal */
+    align-items: center;  /* vertical */
     text-align: center;
-    margin: 2rem;
+    margin: 2.5rem;
+     
 }
 
 .horizontal-container {
     display: flex;
+    /* align-items: center; */
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .text-outline {
     border-radius: 30px;
-    padding: 5%;
-    border: var(--dark-pink) 0.1rem solid;
+    /* padding: 5%; */
+    border: black 0.1rem solid;
+
+    width: 40vw;
+    height: 20vh;
 }
 
 #intro {
-    margin: 3rem;
+    /* margin: 3rem; */
     font-weight: normal;
     font-size: large;
 }
@@ -316,12 +306,13 @@ section {
 
 /* EXPERIENCE SERCTION */
 #experience {
-    display: block;
+    /* display: flex; */
+    /* text-align: center; */
 }
 
 .experience-inner-container {
     display: flex;
-    align-items: center;
+    justify-self: center;
     border-radius: 30px;
     background-color: var(--extra-light-pink);
     margin: 1.5rem;
@@ -351,7 +342,8 @@ section {
     width: 50%;
     background-color: var(--extra-light-pink);
     outline: none;
-    color: var(--dark-pink);
+    color: black;
+    /* color: var(--dark-pink); */
 }
 
 .dialog li {
@@ -370,11 +362,18 @@ section {
     align-self: flex-start;
 }
 
+/* PROJECTS SECTION */
+#projects {
+    /* display: block; */
+    /* display: flex; */
+}
+
 
 
 /* CONTACT SERCTION */
 #contact {
-    display: block;
+    /* display: block; */
+    /* display: flex; */
 }
 
 #contact-form {
@@ -406,7 +405,7 @@ section {
 
 /* FOOTER */
 .footer {
-    color: var(--dark-pink);
+    /* color: var(--dark-pink); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,7 +419,7 @@ section {
 }
 
 #top:hover {
-    color: var(--medium-pink);
+    /* color: var(--medium-pink); */
     text-decoration: underline;
-    text-decoration-color: var(--medium-pink);
+    /* text-decoration-color: var(--medium-pink); */
 }
