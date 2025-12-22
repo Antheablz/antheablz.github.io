@@ -35,14 +35,12 @@
     </nav>
 
 
-
 <!-- HOME SECTION-->
     <div id="blur-container"> <!--BLUR CONTAINER START -->
 
         <section id="profile">
             <div class="outer-container" style="background-color: var(--medium-pink); gap: 2.5rem;">
 
-                
                 <h1 class="title">Hello, I'm Anthea Blais.</h1>
 
                 <h2>I'm a recent Computer Science graduate and aspiring Software Developer!</h2>
@@ -104,10 +102,22 @@
             <div class="outer-container" style="background-color: var(--medium-pink);">
                 <h1 class="title">Work Experience</h1>
 
+                <div class="experience-inner-container" onclick="openDialog('nrc-dialog')">
+                    <div>
+                        <h3>Junior Realtime Interface Software Engineer</h3>
+                        <h5>National Research Council - Herzberg Astronomy & Astrophysics</h5>
+                        <h5>Victoria, BC</h5>
+                        <h5>Jan 2025 - Apr 2025</h5>
+                    </div>
+                    <p> bla bla bla</p>
+                    <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
+                </div>
+
                 <div class="experience-inner-container" onclick="openDialog('zetron-dialog')">
                     <div>
                         <h3>Software Engineer Co-op</h3>
-                        <h5>Zetron, Victoria, BC</h5>
+                        <h5>Zetron</h5>
+                        <h5>Victoria, BC</h5>
                         <h5>Sep 2023 - Aug 2024</h5>
                     </div>
                     <p>Section explaining what I did at Zetron.</p>
@@ -116,21 +126,12 @@
 
                 <div class="experience-inner-container" onclick="openDialog('INO-dialog')">
                     <div>
-                        <h3>In-N-Out</h3>
+                        <h3>In-N-Out Associate</h3>
+                        <h5>In-N-Out</h5>
                         <h5>Livermore, CA</h5>
                         <h5>June 2017 - Sep 2023</h5>
                     </div>
                     <p>Section explaining what I did at In-N-Out</p>
-                    <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
-                </div>
-
-                <div class="experience-inner-container" onclick="openDialog('xfdc-dialog')">
-                    <div>
-                        <h3>XFDC</h3>
-                        <h5>Livermore, CA</h5>
-                        <h5>Sep 2016 - Dec 2020</h5>
-                    </div>
-                    <p>Dance Teacher Assistant</p>
                     <img src="./assets/read-more.png" alt="read-more img" class="read-more-icon" draggable="false"/>
                 </div>
 
@@ -195,7 +196,7 @@
             <button id="close-INO-dialog" class="btn" style="outline: none;" onclick="closeDialog('INO-dialog')">close</button>
         </dialog>
 
-        <dialog id="xfdc-dialog" class="dialog">
+        <dialog id="nrc-dialog" class="dialog">
             <div> xfdc dialog
                 <ul>
                     <li>bullet point 1</li>
@@ -203,7 +204,7 @@
                 </ul>
             </div>
             
-            <button id="close-xfdc-dialog" class="btn" style="outline: none;" onclick="closeDialog('xfdc-dialog')">close</button>
+            <button id="close-nrc-dialog" class="btn" style="outline: none;" onclick="closeDialog('nrc-dialog')">close</button>
         </dialog>
 
 
