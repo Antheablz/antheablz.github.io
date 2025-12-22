@@ -349,7 +349,7 @@ section {
     border-radius: 30px;
     cursor: default;
 
-    height: 70vh;
+    height: 80vh;
     width: 70vw;
     background-color: var(--extra-light-pink);
     outline: none;
@@ -364,10 +364,21 @@ section {
     margin: 0px;
 }
 
+.dialog-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+}
+
 .dialog-bullets{
     margin: 2rem;
 }
 
+.dialog-btn {
+    justify-self: center;
+    margin-bottom: 1.5rem;
+    outline: none;
+}
 #close-zetron-dialog:hover, #close-INO-dialog:hover, #close-nrc-dialog:hover {
     cursor: pointer;
 }

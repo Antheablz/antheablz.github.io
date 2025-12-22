@@ -183,51 +183,64 @@
 
         <!-- DIALOGS -->
          <dialog id="nrc-dialog" class="dialog">
-            <div class="dialog-bullets">
-                <ul>
-                    <li>Redesigned and refactored the browser-based real-time user interface for the Herzberg Extensible 
-                        Adaptive Real-time Toolkit (HEART) used in Adaptive Optics systems.</li>
-                    <li>Worked with HTML/CSS/JavaScript, C, Python, and Git in a Linux development environment on an Agile Scrum Team.</li>
-                    <li>Improved usability and scalability by restructuring the application layout based on user feedback and 
-                        observed workflows; standardized component styling, spacing, and sizing.</li>
-                    <li>Improved user experience by implemented new UI features, including a dropdown error log viewer, and loading indicators.</li>
-                    <li>Enhanced code readability and maintainability by refactoring and debugging the web application’s front-end codebase.</li>
-                    <li>Developed unit tests in C using CMocka to verify Adaptive Optics calculations and ensure correctness.</li>
-                    <li>Prototyped and presented an automated browser testing framework using Selenium and Python, enabling repeatable UI validation.</li>
-                    <li>Improved data handling by designing and implementing a JSON-based data transmission system between the server and web application.</li>
-                </ul>
-            </div>
+
+            <div class="dialog-container"> 
+
+                <div class="dialog-bullets">
+                    <ul>
+                        <li>Redesigned and refactored the browser-based real-time user interface for the Herzberg Extensible 
+                            Adaptive Real-time Toolkit (HEART) used in Adaptive Optics systems.</li>
+                        <li>Worked with HTML/CSS/JavaScript, C, Python, and Git in a Linux development environment on an Agile Scrum Team.</li>
+                        <li>Improved usability and scalability by restructuring the application layout based on user feedback and 
+                            observed workflows; standardized component styling, spacing, and sizing.</li>
+                        <li>Improved user experience by implemented new UI features, including a dropdown error log viewer, and loading indicators.</li>
+                        <li>Enhanced code readability and maintainability by refactoring and debugging the web application’s front-end codebase.</li>
+                        <li>Developed unit tests in C using CMocka to verify Adaptive Optics calculations and ensure correctness.</li>
+                        <li>Prototyped and presented an automated browser testing framework using Selenium and Python, enabling repeatable UI validation.</li>
+                        <li>Improved data handling by designing and implementing a JSON-based data transmission system between the server and web application.</li>
+                    </ul>
+                </div>
+                <button id="close-nrc-dialog" class="btn dialog-btn" onclick="closeDialog('nrc-dialog')">close</button>
             
-            <button id="close-nrc-dialog" class="btn" style="outline: none;" onclick="closeDialog('nrc-dialog')">close</button>
+            </div>
+
         </dialog>
 
         <dialog id="zetron-dialog" class="dialog">
-            <div class="dialog-bullets">
-                <ul>
-                    <li>Collaborated and consistently delivered scrum goals on two Agile Scrum Teams, one on an embedded Linux platform for a radio system product
-                        and another on a new library implementing the Digital Fixed Station Interface (DFSI) protocol. </li>
-                    <li>Automated the build, test, and deployment process by designing and implementing Azure DevOps YAML CI/CD pipelines.</li>
-                    <li>Led the design and implementation of an object-oriented automated test suite for the DFSI library, using Python and C++. Created a multithreaded,
-                        event-based architecture to simulate UDP packet transit between a Fixed Station Client and a Fixed Station Host. Integrated D-Bus, UDP Sockets, Pytest, and managed the library's executable as a background process.</li>
-                    <li>Decreased the product's automated test suite speed by 60 minutes through modifying and retrieving the radio system's internal epoch time via PUT and GET HTTP endpoints in C; verified functionality by creating Pytest tests.</li>
-                    <li>Monitored the radio system's SoM internal temperature and configured GPIO pin values via PUT and GET HTTP endpoints in C; verified functionality by creating Pytest tests.</li>
-                    <li>Contributed to developing a STM32L4 custom bootloader and implemented firmware update mechanisms in C.</li>
-                    <li>Integrated SWUpdate with the product's reverse proxy, along with obtaining the current and previous software versions in C. Crafted a JavaScript/HTML/CSS webpage to preform software updates and display software versions.
-                        Developed automated tests with Pytest and Selenium to validate both the front-end and back-end software update functionalities.</li>
-                </ul>
+            <div class="dialog-container"> 
+
+                <div class="dialog-bullets">
+                    <ul>
+                        <li>Collaborated and consistently delivered scrum goals on two Agile Scrum Teams, one on an embedded Linux platform for a radio system product
+                            and another on a new library implementing the Digital Fixed Station Interface (DFSI) protocol. </li>
+                        <li>Automated the build, test, and deployment process by designing and implementing Azure DevOps YAML CI/CD pipelines.</li>
+                        <li>Led the design and implementation of an object-oriented automated test suite for the DFSI library, using Python and C++. Created a multithreaded,
+                            event-based architecture to simulate UDP packet transit between a Fixed Station Client and a Fixed Station Host. Integrated D-Bus, UDP Sockets, Pytest, and managed the library's executable as a background process.</li>
+                        <li>Decreased the product's automated test suite speed by 60 minutes through modifying and retrieving the radio system's internal epoch time via PUT and GET HTTP endpoints in C; verified functionality by creating Pytest tests.</li>
+                        <li>Monitored the radio system's SoM internal temperature and configured GPIO pin values via PUT and GET HTTP endpoints in C; verified functionality by creating Pytest tests.</li>
+                        <li>Contributed to developing a STM32L4 custom bootloader and implemented firmware update mechanisms in C.</li>
+                        <li>Integrated SWUpdate with the product's reverse proxy, along with obtaining the current and previous software versions in C. Crafted a JavaScript/HTML/CSS webpage to preform software updates and display software versions.
+                            Developed automated tests with Pytest and Selenium to validate both the front-end and back-end software update functionalities.</li>
+                    </ul>
+                </div>
+                <button id="close-zetron-dialog" class="btn dialog-btn" onclick="closeDialog('zetron-dialog')">close</button>
+        
             </div>
-            <button id="close-zetron-dialog" class="btn" style="outline: none;" onclick="closeDialog('zetron-dialog')">close</button>
         </dialog>
 
         <dialog id="INO-dialog" class="dialog">
-            <div class="dialog-bullets">
-                <ul>
-                    <li>Promoted to highest level before management, demonstrating exceptional performance and dedication.</li>
-                    <li>Utilizes a detailed-oriented mindset to accurately prepare high quality food, with an emphasis on excellent customer service in a fast-paced, dynamic, and collaborative environment.</li>
-                    <li>Mentored and onboarded new hires by providing clearly communicated one-on-one feedback, resulting in improved multitasking and prioritization skills.</li>
-                </ul>
+            <div class="dialog-container"> 
+
+                <div class="dialog-bullets">
+                    <ul>
+                        <li>Promoted to highest level before management, demonstrating exceptional performance and dedication.</li>
+                        <li>Utilizes a detailed-oriented mindset to accurately prepare high quality food, with an emphasis on excellent customer service in a fast-paced, dynamic, and collaborative environment.</li>
+                        <li>Mentored and onboarded new hires by providing clearly communicated one-on-one feedback, resulting in improved multitasking and prioritization skills.</li>
+                    </ul>
+                </div>
+                <button id="close-INO-dialog" class="btn dialog-btn" onclick="closeDialog('INO-dialog')">close</button>
+            
             </div>
-            <button id="close-INO-dialog" class="btn" style="outline: none;" onclick="closeDialog('INO-dialog')">close</button>
         </dialog>
 
         <footer class="footer">
