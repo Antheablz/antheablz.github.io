@@ -360,8 +360,9 @@ section {
 
 .dialog li {
     display: list-item;
-    list-style-type: circle;
+    list-style-type: disc;
     margin: 0px;
+    color: black;
 }
 
 .dialog-container {
