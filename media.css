@@ -46,7 +46,7 @@
     background-color: var(--shear-pink);
     border-radius: 30px;
     /* border: var(--dark-pink) 0.1rem solid; */
-    border: black 0.1rem solid;
+    border: var(--black-outline);
 }
 
 
@@ -109,8 +109,7 @@
 
     .outer-container {
         display: flex;
-        /* height: 100%; */
-        /* border: solid blue 4px; */
+      
     }
 
 
@@ -147,7 +146,7 @@
     .text-outline {
         border-radius: 30px;
         padding: 10%;
-        border: black 0.1rem solid;
+        border: var(--black-outline);
         cursor: default;
     }
 

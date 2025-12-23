@@ -17,6 +17,8 @@
     --shear-pink: rgba(255,240,239,.85);
     --shadow: rgba(0,0,0,.8);
     --light-shadow: rgba(0,0,0,.5);
+
+    --black-outline: black 0.1rem solid;
 }
 
 * {
@@ -54,14 +56,10 @@ a, .btn {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    /* color: var(--dark-pink); */
-    /* background-color: var(--extra-light-pink); */
-    /* border: var(--dark-pink) 0.1rem solid; */
+   
 
     /* background-color: var(--medium-pink); */
     background-color: var(--extra-light-pink);
-
-    /* background-color: var(--medium-light-pink); */
    
 }
 
@@ -209,7 +207,9 @@ section {
 .text-outline {
     border-radius: 30px;
     cursor: default;
-    border: black 0.1rem solid;
+    /* border: black 0.1rem solid; */
+
+    border: var(--black-outline);
 
     width: 40vw;
     height: 20vh;
@@ -243,6 +243,7 @@ section {
     padding: 2.5%;
     gap: 2rem;
     width: 80%;
+    border: var(--black-outline);
 }
 
 .experience-inner-container:hover {
@@ -337,7 +338,7 @@ section {
 
     /* width: 20vw;
     height: 20vh; */
-    border: black 0.1rem solid;
+    border: var(--black-outline);
     border-radius: 30px;
     cursor: default;
 }
