@@ -6,7 +6,12 @@
     --medium-pink: #E4A9A4;
     --orange: #EFBA97;
     --light-pink: #F1CCBB;
-    --extra-light-pink: #fff0ef;
+    --medium-light-pink: #ffd6d3;
+    /* --extra-light-pink: #fff0ef; */
+
+    --extra-light-pink: #fde2e0;
+
+    
     --skin: #E7D5C7;
 
     --shear-pink: rgba(255,240,239,.85);
@@ -53,8 +58,13 @@ a, .btn {
     /* background-color: var(--extra-light-pink); */
     /* border: var(--dark-pink) 0.1rem solid; */
 
-    background-color: var(--medium-pink);
+    /* background-color: var(--medium-pink); */
+    background-color: var(--extra-light-pink);
+
+    /* background-color: var(--medium-light-pink); */
+   
 }
+
 
 .btn:hover {
     cursor: pointer;
@@ -121,6 +131,7 @@ section {
 
     /* border: 2px solid black; */
     height: 100vh;
+    /* height: 100%; */
 }
 
 .outer-container {
@@ -136,7 +147,6 @@ section {
     justify-content: center; /* horizontal */
     align-items: center;  /* vertical */
 }
-
 
 
 /* PROFILE  SECTION*/
@@ -176,12 +186,9 @@ section {
 
 /* ABOUT SECTION*/
 #about {
+    
     /* color: var(--dark-pink); */
 }
-
-/* .about-header {
-    margin-left: 1rem;
-} */
 
 .overview-container {
     display: flex;
@@ -201,7 +208,7 @@ section {
 
 .text-outline {
     border-radius: 30px;
-    /* padding: 5%; */
+    cursor: default;
     border: black 0.1rem solid;
 
     width: 40vw;
@@ -218,6 +225,7 @@ section {
 
 /* EXPERIENCE SERCTION */
 #experience {
+    height: 100%;
     /* display: flex; */
     /* text-align: center; */
 }
@@ -306,9 +314,33 @@ section {
 
 /* PROJECTS SECTION */
 #projects {
-
+    height: 100%;
 }
 
+.projects-grid-outer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 1.5rem;
+}
+
+.projects-grid-item {
+    background-color: var(--medium-pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+
+    /* width: 20vw;
+    height: 20vh; */
+    border: black 0.1rem solid;
+    border-radius: 30px;
+    cursor: default;
+}
+
+.projects-desc {
+    margin-top: 1rem;
+}
 
 /* CONTACT SERCTION */
 #contact {
@@ -339,8 +371,6 @@ section {
     color: red;
     visibility: hidden;
 }
-
-
 
 
 /* FOOTER */

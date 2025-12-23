@@ -87,6 +87,11 @@
 
 /* MOBILE VIEW */
 @media screen and (max-width: 992px) {
+
+    /* body {
+        font-size: small;
+    } */
+
     /* MOBILE NAV */
     #desktop-nav {
         display: none;
@@ -98,11 +103,13 @@
 
     section {
         display: flex;
-        height: 115vh;
+        /* height: 115vh; */
+        /* height: 100%; */
     }
 
     .outer-container {
         display: flex;
+        /* height: 100%; */
         /* border: solid blue 4px; */
     }
 
@@ -116,6 +123,10 @@
 
 
     /* MOBILE ABOUT */
+    #about {
+        height: 100%;
+    }
+
     #intro {
         margin: 0;
         font-size: medium;
@@ -137,6 +148,7 @@
         border-radius: 30px;
         padding: 10%;
         border: black 0.1rem solid;
+        cursor: default;
     }
 
 
@@ -166,9 +178,22 @@
     }
     
 
-    /* .experience-inner-container h5, .experience-inner-container h3{
-        text-decoration: underline;
-    } */
+     /* MOBILE PROJECTS */
+     .projects-grid-outer {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        height: 100%;
+    }
 
+    .projects-grid-item {
+        background-color: var(--medium-pink);
+        display: flex;
+        flex-direction: column;
+        /* font-size: x-small; */
+    }
+
+
+  
 
 }
