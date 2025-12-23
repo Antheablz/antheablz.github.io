@@ -184,7 +184,6 @@ section {
 
 /* ABOUT SECTION*/
 #about {
-    
     /* color: var(--dark-pink); */
 }
 
@@ -226,8 +225,8 @@ section {
 /* EXPERIENCE SERCTION */
 #experience {
     height: 100%;
-    /* display: flex; */
-    /* text-align: center; */
+    /* border: solid blue 4px; */
+    
 }
 
 .experience-btn {
