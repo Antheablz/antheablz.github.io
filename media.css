@@ -8,12 +8,13 @@
 .mobile-menu {
     position: relative;
     display: block;
+    margin-left: auto;
 }
 
 .mobile-links {
     position: absolute;
     top: 100%;
-    right: 0%;
+    right: 10%;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -65,12 +66,13 @@
 .mobile-icon:before,
 .mobile-icon:after,
 .mobile-icon div {
-    /* background-color: var(--dark-pink); */
     background-color: black;
     content: "";
     display: block;
+
     height: 5px;
     margin: 7px 7px;
+
     transition: 0.5s;
 }
 
@@ -99,6 +101,7 @@
 
     #mobile-nav {
         display: flex;
+        /* justify-content: space-around; */
     }
 
     section {
@@ -124,7 +127,7 @@
     /* MOBILE ABOUT */
     #about {
         height: 100%;
-        
+
     }
 
     #intro {
