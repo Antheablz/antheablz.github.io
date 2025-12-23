@@ -28,6 +28,10 @@
     
     --font-bold: 700;
 
+    --mobile-font-base: 0.75rem;
+    --mobile-font-title: 2rem;
+    --mobile-font-subtitle: 1rem;
+
 }
 
 * {
@@ -87,7 +91,6 @@ a, .btn {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-
     background-color: var(--extra-light-pink);
 }
 
@@ -99,17 +102,13 @@ a, .btn {
 
 /* DESKTOP NAV */
 a {
-    /* color: var(--dark-pink); */
     color: black;
     text-decoration: none;
     text-decoration-color: white;
-    /* font-size: large; */
 }
 
 a:hover {
-    /* color: var(--medium-pink); */
     text-decoration: underline;
-    /* text-decoration-color: var(--medium-pink); */
 }
 
 .basic-bar {
@@ -120,18 +119,6 @@ a:hover {
     align-items: center;
     height: 10vh;
     margin: 1.5%;
-}
-
-nav {
-    /* justify-content: space-around; */
-
-    /* display: flex;
-    background-color: var(--extra-light-pink);
-    border-radius: 30px;
-    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-    align-items: center;
-    height: 10vh;
-    margin: 1.5%;  */
 }
 
 .nav-links {
@@ -399,7 +386,7 @@ section {
     margin-top: auto;
 }
 
-/* CONTACT SERCTION */
+/* CONTACT SECTION */
 #contact {
     /* display: block; */
     /* display: flex; */
