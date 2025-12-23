@@ -82,8 +82,7 @@ a, .btn {
 }
 
 .btn {
-    /* font-size: medium; */
-
+    font-size: var(--font-size-base);
     transition:  all 300ms ease;
     padding: 1rem;
     width: 8rem;
