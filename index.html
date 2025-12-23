@@ -19,7 +19,6 @@
         </div>
     </nav>
     <nav id="mobile-nav"  class="basic-bar">
-        <!-- <div class="logo">Anthea Blais</div> -->
         <div class="mobile-menu">
             <div id="mobile-hamburger" class="mobile-icon" onclick="toggleMenu()">
                 <div></div>
@@ -39,24 +38,32 @@
 
         <section id="profile">
             <div class="outer-container" style="background-color: var(--medium-pink); gap: 2.5rem;">
-
                 <h1 class="title">Hello, I'm Anthea Blais.</h1>
 
-                <h2>I'm a recent Computer Science graduate and aspiring Software Developer!</h2>
-                <div class="btn-container">
+                <!-- <div class="profile-name-outer">
+                    <h1>Hello!</h1>
+                    <h4>My name is</h4>
+                    <div class="profile-name-inner">
+                        <h1>Anthea Blais</h1>
+                    </div>
+                </div>
+                 -->
+
+
+                <p class="subtitle">I'm a recent Computer Science graduate and aspiring Software Developer!</p>
+                <div class="btn-container" style="padding-top: 2.5rem;">
                     <button class="btn" onclick="window.open('./assets/Resume.pdf')">Resume</button>
                     <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
                 </div>
                 <div class="socials-container">
                     <a href="http://www.linkedin.com/in/antheablais">
-                        <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" draggable="false"/>
+                        <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon-large" draggable="false"/>
                     </a>
 
                     <a href="https://github.com/Antheablz">
-                        <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" draggable="false"/>
+                        <img id="github-icon" src="./assets/github.png" alt="github img" class="icon-large" draggable="false"/>
                     </a>
                 </div>
-
             </div>
         </section>
 
@@ -66,11 +73,11 @@
                 <h1 class="title">About Me</h1>
 
                 <div class="overview-container">
-                    <h4 id="intro">Welcome to my portfolio! I'm currently finishing up my Computer Science degree at the 
+                    <p class="body-bold">Welcome to my portfolio! I'm currently finishing up my Computer Science degree at the 
                         Univeristy of Victoria. When I am not coding, I'm often found biking to dance
                         classes, baking sourdough bread, or exploring new hiking spots. I invite you to delve into a piece 
                         of my world, and join me on my programming journey!
-                    </h4>
+                    </p>
                 </div>
 
                 <div class="horizontal-container">
@@ -78,7 +85,7 @@
                     <div class="overview-container text-outline">
                         <div class="horizontal-container">
                             <img src="./assets/education.png" alt="education img" class="icon" draggable="false"/>
-                            <h3 class="about-header">Education</h3>
+                            <p class="body-bold">Education</p>
                         </div>
                         <p>B.Sc. Computer Science from University of Victoria</p>
                     </div>
@@ -86,7 +93,7 @@
                     <div class="overview-container text-outline">
                         <div class="horizontal-container">
                             <img src="./assets/experience.png" alt="experience img" class="icon" draggable="false"/>
-                            <h3 class="about-header">Skills</h3>
+                            <p class="body-bold">Skills</p>
                         </div>
                         <p>C, Python, C++, JavaScript, HTML, CSS, Git, Linux, PostgreSQL, SQLite </p>
                     </div>
@@ -102,11 +109,12 @@
                 <h1 class="title">Work Experience</h1>
 
                 <div class="experience-inner-container" onclick="openDialog('nrc-dialog')">
-                    <div class="experience-titles">
-                        <h3>Junior Realtime Interface Software Engineer</h3>
-                        <h5>National Research Council - Herzberg Astronomy & Astrophysics</h5>
-                        <h5>Victoria, BC</h5>
-                        <h5>Jan 2025 - Apr 2025</h5>
+                    <div class="experience-headers">
+                        <p class="body-bold">Junior Realtime Interface Software Engineer</p>
+                        <p class="body-small body-bold">National Research Council -</p>
+                        <p class="body-small body-bold">Herzberg Astronomy & Astrophysics</p>
+                        <p class="body-small">Victoria, BC</p>
+                        <p class="body-small">Jan 2025 - Apr 2025</p>
                     </div>
                     <p class="experience-desc">Contributed to the design, implementation, and testing of a real-time web interface for the HEART software framework for Adaptive Optics systems.</p>
                     <div class="btn-container experience-btn">
@@ -115,11 +123,11 @@
                 </div>
 
                 <div class="experience-inner-container" onclick="openDialog('zetron-dialog')">
-                    <div class="experience-titles">
-                        <h3>Software Engineer Co-op</h3>
-                        <h5>Zetron</h5>
-                        <h5>Victoria, BC</h5>
-                        <h5>Sep 2023 - Aug 2024</h5>
+                    <div class="experience-headers">
+                        <p class="body-bold">Software Engineer Co-op</p>
+                        <p class="body-small body-bold">Zetron</p>
+                        <p class="body-small">Victoria, BC</p>
+                        <p class="body-small">Sep 2023 - Aug 2024</p>
                     </div>
                     <p class="experience-desc">Developed and tested software on an embedded linux platform for radio communication devices, included CI/CD automation, networking protocols, and firmware update mechanisms.</p>
                     <div class="btn-container experience-btn">
@@ -128,11 +136,11 @@
                 </div>
 
                 <div class="experience-inner-container" onclick="openDialog('INO-dialog')">
-                    <div class="experience-titles">
-                        <h3>In-N-Out Associate</h3>
-                        <h5>In-N-Out</h5>
-                        <h5>Livermore, CA</h5>
-                        <h5>June 2017 - Sep 2023</h5>
+                    <div class="experience-headers">
+                        <p class="body-bold">In-N-Out Associate</p>
+                        <p class="body-small body-bold">In-N-Out</p>
+                        <p class="body-small">Livermore, CA</p>
+                        <p class="body-small">June 2017 - Sep 2023</p>
                     </div>
                     <p class="experience-desc">Demonstrated reliability, attention to detail, and teamwork while delivering high-quality customer service in a fast-paced environment.</p>
                     <div class="btn-container experience-btn">
@@ -150,12 +158,12 @@
 
                 <div class ="projects-grid-outer"> 
                     <div class="projects-grid-item">
-                        <h3>Password Manager</h3>
-                        <h5>Jan 2025 - Present</h5>
+                        <p class="header">Password Manager</p>
+                        <p class="body-small body-bold">Jan 2025 - Present</p>
                         <p class="projects-desc">Developing a Python application for secure password storage. Implements PostgreSQL database integration 
                             and an intuitive Tkinter GUI for password entry, retrieval, and management.</p>
                     
-                        <div class="btn-container">
+                        <div class="btn-container" style="margin-top: auto;">
                             <a href="https://github.com/Antheablz/password_manager">
                                 <button class="btn">GitHub</button>
                             </a>
@@ -163,12 +171,12 @@
                     </div>
 
                     <div class="projects-grid-item">
-                        <h3>Personal Portfolio Website</h3>
-                        <h5>June 2024 - Present</h5>
+                        <p class="header">Personal Portfolio Website</p>
+                        <p class="body-small body-bold">June 2024 - Present</p>
                         <p class="projects-desc">A responsive portfolio website created with JavaScript/HTML/CSS to showcase personal software development
                             projects, technical skills, and achievements</p>
 
-                        <div class="btn-container">
+                        <div class="btn-container" style="margin-top: auto;">
                             <a href="https://github.com/Antheablz/Web-Portfolio">
                                 <button class="btn">GitHub</button>
                             </a>
@@ -176,12 +184,12 @@
                     </div>
 
                     <div class="projects-grid-item">
-                        <h3>AI Snake Game</h3>
-                        <h5>June 2024</h5>
+                        <p class="header">AI Snake Game</p>
+                        <p class="body-small body-bold">June 2024</p>
                         <p class="projects-desc">Developed and trained an AI agent using a forward-feeding neural network in Python to autonomously play a snake game.
                             Utilized libraries such as PyTorch and Pygame.</p>
 
-                        <div class="btn-container">
+                        <div class="btn-container" style="margin-top: auto;">
                             <a href="https://github.com/Antheablz/AI-snake-game">
                                 <button class="btn">GitHub</button>
                             </a>
@@ -189,12 +197,12 @@
                     </div>
 
                     <div class="projects-grid-item">
-                        <h3>Arduino Projects</h3>
-                        <h5>Sept - Dec 2023</h5>
+                        <p class="header">Arduino Projects</p>
+                        <p class="body-small body-bold">Sept - Dec 2023</p>
                         <p class="projects-desc">Various projects built on Arduino microcontrollers in AVR Assembly. Projects include flashing LED lights in Morse Code signal patterns and 
                             displaying custom messages on a LCD screen.</p>
 
-                        <div class="btn-container">
+                        <div class="btn-container" style="margin-top: auto;">
                             <a href="https://github.com/Antheablz/Assembly-and-C-arduino-projects">
                                 <button class="btn">GitHub</button>
                             </a>

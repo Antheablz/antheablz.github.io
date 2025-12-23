@@ -46,7 +46,6 @@
     width: 40vh;
     background-color: var(--shear-pink);
     border-radius: 30px;
-    /* border: var(--dark-pink) 0.1rem solid; */
     border: var(--black-outline);
 }
 
@@ -90,8 +89,14 @@
 /* MOBILE VIEW */
 @media screen and (max-width: 992px) {
 
-    /* body {
+    body {
         font-size: small;
+    }
+
+    /* * {
+        margin: 0%;
+        padding: 0%;
+        font-size: 12px;
     } */
 
     /* MOBILE NAV */
@@ -112,27 +117,27 @@
 
     .outer-container {
         display: flex;
-      
     }
 
 
     /* MOBILE PROFILE */
     #profile {
-        /* display: block; */
         display: flex;
         flex-direction: column;
+        /* font-size: small; */
     }
 
 
     /* MOBILE ABOUT */
     #about {
         height: 100%;
+        /* font-size: small; */
 
     }
 
     #intro {
         margin: 0;
-        font-size: medium;
+        /* font-size: medium; */
     }
 
     .overview-container {
@@ -157,7 +162,6 @@
 
     /* MOBILE EXPERIENCE */
     .experience-inner-container {
-        /* display: block; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -166,7 +170,6 @@
 
     .experience-desc {
         display: none;
-       
     }
 
     .experience-titles {
@@ -178,13 +181,12 @@
     .experience-btn {
         display: flex;
     }
-    
 
      /* MOBILE PROJECTS */
      .projects-grid-outer {
         display: flex;
         flex-direction: column;
-        font-size: small;
+        /* font-size: small; */
         height: 100%;
     }
 
@@ -195,7 +197,5 @@
         /* font-size: x-small; */
     }
 
-
-  
 
 }

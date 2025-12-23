@@ -19,6 +19,15 @@
     --light-shadow: rgba(0,0,0,.5);
 
     --black-outline: black 0.1rem solid;
+
+    --font-small: 0.75rem;
+    --font-header: 1.25rem;
+    --font-size-base: 1rem;
+    --font-size-subtitle: 1.5rem;
+    --font-size-title: 2.5rem;
+    
+    --font-bold: 700;
+
 }
 
 * {
@@ -28,13 +37,35 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    /*background-color: var(--extra-light-pink);*/
+    font-size: var(--font-size-base);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.subtitle {
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-bold);
+}
+
+.title {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-bold);
+}
+
+.header {
+    font-size: var(--font-header);
+    font-weight: var(--font-bold);
+}
+
+.body-bold {
+    font-weight: var(--font-bold);
+}
+
+.body-small {
+    font-size: var(--font-small);
+}
 
 /* TRANSITION */
 a, .btn {
@@ -51,29 +82,21 @@ a, .btn {
 }
 
 .btn {
-    font-weight: 600;
+    /* font-size: medium; */
+
     transition:  all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-   
 
-    /* background-color: var(--medium-pink); */
     background-color: var(--extra-light-pink);
-   
 }
-
 
 .btn:hover {
     cursor: pointer;
-    /* color: white; */
-    /* background-color: var(--dark-pink); */
-    /* border: var(--dark-pink) 0.1rem solid; */
     box-shadow: .5vh .5vh 1.5vh 0 var(--shadow);
     transform: scale(1.05);
 }
-
-
 
 /* DESKTOP NAV */
 a {
@@ -81,7 +104,7 @@ a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
-    font-size: large;
+    /* font-size: large; */
 }
 
 a:hover {
@@ -116,7 +139,6 @@ nav {
     display: flex;
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
 }
 
 #desktop-nav {
@@ -153,26 +175,59 @@ section {
     height: 100%;
     width: 100%;
 
-    justify-content: center; /* horizontal */
-    align-items: center;  /* vertical */
+    justify-content: center; 
+    align-items: center; 
 }
 
-
 /* PROFILE  SECTION*/
-#desktop-pic {
+.profile-name-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 60vw;
+    height: 40vw;          keeps aspect ratio */
+    
+    background-color: var(--extra-light-pink);
     border-radius: 30px;
-    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
+
+    /* height: 90%;
+    width: 80%; */
+
+    height: 50vh;
+    width: 40vw;
+
+    margin-top: 2.5rem;
+
+}
+
+.profile-name-inner {
+    background-color: var(--medium-pink);
+    border-radius: 30px;
+    margin-top: 2.5rem;
+    /* width: 70%;
+    height: 60%;
+   transform: scale(0.8); */
+
+   display: flex;
+   height: 50vh;
+   width: 40vw;
+
 }
 
 #github-icon:hover, #linkedin-icon:hover {
     cursor: pointer;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: .5vh .5vh 1.5vh 0 var(--shadow);
     transform: scale(1.05);
+    border-radius: 30px;
 }
 
 .icon {
     height: 2.5rem;
+}
+
+.icon-large {
+    height: 3.5rem;
 }
 
 #profile {
@@ -183,15 +238,8 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 1.5rem;
+    margin: 1rem;
 }
-
-.title {
-    font-size: 2.5rem;
-    /* text-align: center; */
-    /* padding-bottom: 1.5rem; */
-}
-
 
 
 /* ABOUT SECTION*/
@@ -213,23 +261,16 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
 }
 
 .text-outline {
     border-radius: 30px;
     cursor: default;
-    /* border: black 0.1rem solid; */
-
     border: var(--black-outline);
 
     width: 40vw;
     height: 20vh;
-}
-
-#intro {
-    /* margin: 3rem; */
-    font-weight: normal;
-    font-size: large;
 }
 
 
@@ -238,7 +279,6 @@ section {
 #experience {
     height: 100%;
     /* border: solid blue 4px; */
-    
 }
 
 .experience-btn {
@@ -247,13 +287,14 @@ section {
 
 .experience-inner-container {
     display: flex;
-    justify-self: center;
+    align-items: center;
     border-radius: 30px;
     background-color: var(--extra-light-pink);
     margin: 1.5rem;
     padding: 2.5%;
     gap: 2rem;
-    width: 80%;
+    /* width: 85%; */
+    height: 12vh;
     border: var(--black-outline);
 }
 
@@ -264,13 +305,15 @@ section {
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
 }
 
-.experience-titles {
+.experience-headers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .experience-desc {
+    display: flex;
     width: 50%; 
     margin-left: auto;
     margin-right: 0;
@@ -338,24 +381,23 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin: 1.5rem;
+
+    /* height: 100%; */
 }
 
 .projects-grid-item {
     background-color: var(--medium-pink);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 1.5rem;
-
-    /* width: 20vw;
-    height: 20vh; */
     border: var(--black-outline);
     border-radius: 30px;
     cursor: default;
+    height: 45vh;
 }
 
 .projects-desc {
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
 /* CONTACT SERCTION */
@@ -374,7 +416,6 @@ section {
 
 .contact-text {
     resize: none;
-    font-size: 16px;
     width: 100%;
 }
 
