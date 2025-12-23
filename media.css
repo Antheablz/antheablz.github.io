@@ -110,9 +110,19 @@
         /* height: 100%; */
     }
 
+    /* MOBILE BUTTONS */
+
+    .btn-container {
+        /* padding: 0.5rem; */
+        padding: 0rem;
+
+        align-items: center;
+    }
+
     .btn {
         font-size: var(--moble-font-base);
     }
+
 
     
 
@@ -197,8 +207,8 @@
         /* height: 100%; */
     }
 
-    .project-grid-item {
-        height: 45vh;
+    .projects-grid-item {
+        padding: 0.5rem;
     }
 
     /* .projects-grid-item {
