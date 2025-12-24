@@ -11,7 +11,6 @@
 
     --extra-light-pink: #fde2e0;
 
-    
     --skin: #E7D5C7;
 
     --shear-pink: rgba(255,240,239,.85);
@@ -100,6 +99,18 @@ a, .btn {
     transform: scale(1.05);
 }
 
+/* FOOTER AND HEADER BAR */
+.basic-bar {
+    display: flex;
+    background-color: var(--extra-light-pink);
+    border-radius: 30px;
+    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
+    align-items: center;
+    height: 10vh;
+    margin: 1.5%;
+}
+
+
 /* DESKTOP NAV */
 a {
     color: black;
@@ -109,16 +120,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.basic-bar {
-    display: flex;
-    background-color: var(--extra-light-pink);
-    border-radius: 30px;
-    box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-    align-items: center;
-    height: 10vh;
-    margin: 1.5%;
 }
 
 .nav-links {
@@ -145,25 +146,20 @@ section {
     align-items: center;
     text-align: center;
     margin: 1.5%;
-
-    /* border: 2px solid black; */
     height: 100vh;
-    /* height: 100%; */
 }
 
 .outer-container {
     display: flex;
     flex-direction: column;
-   
     border-radius: 30px;
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-
     height: 100%;
     width: 100%;
-
     justify-content: center; 
     align-items: center; 
 }
+
 
 /* PROFILE  SECTION*/
 .profile-name-outer{
@@ -183,7 +179,6 @@ section {
     width: 40vw;
 
     margin-top: 2.5rem;
-
 }
 
 .profile-name-inner {
@@ -197,12 +192,10 @@ section {
    display: flex;
    height: 50vh;
    width: 40vw;
-
 }
 
 #github-icon:hover, #linkedin-icon:hover {
     cursor: pointer;
-    /* border-radius: 20px; */
     box-shadow: .5vh .5vh 1.5vh 0 var(--shadow);
     transform: scale(1.05);
     border-radius: 30px;
@@ -216,10 +209,6 @@ section {
     height: 3.5rem;
 }
 
-#profile {
-    /* color: var(--extra-light-pink); */
-}
-
 .socials-container {
     display: flex;
     justify-content: center;
@@ -229,18 +218,13 @@ section {
 
 
 /* ABOUT SECTION*/
-#about {
-    /* color: var(--dark-pink); */
-}
-
 .overview-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* horizontal */
-    align-items: center;  /* vertical */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 2.5rem;
-     
 }
 
 .horizontal-container {
@@ -254,17 +238,14 @@ section {
     border-radius: 30px;
     cursor: default;
     border: var(--black-outline);
-
     width: 40vw;
     height: 20vh;
 }
 
 
-
 /* EXPERIENCE SERCTION */
 #experience {
     height: 100%;
-    /* border: solid blue 4px; */
 }
 
 .experience-btn {
@@ -311,7 +292,6 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    /* text-align: center; */
     border-radius: 30px;
     cursor: default;
 
@@ -320,8 +300,6 @@ section {
     background-color: var(--extra-light-pink);
     outline: none;
     color: black;
-
-    /* color: var(--dark-pink); */
 }
 
 .dialog li {
@@ -350,12 +328,6 @@ section {
     cursor: pointer;
 }
 
-.read-more-icon {
-    display: none;
-    /* height: 2rem;
-    margin-left: auto;
-    align-self: flex-start; */
-}
 
 /* PROJECTS SECTION */
 #projects {
@@ -367,8 +339,6 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin: 1.5rem;
-
-    /* height: 100%; */
 }
 
 .projects-grid-item {
@@ -387,11 +357,6 @@ section {
 }
 
 /* CONTACT SECTION */
-#contact {
-    /* display: block; */
-    /* display: flex; */
-}
-
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -418,22 +383,15 @@ section {
 
 /* FOOTER */
 .footer {
-    /* color: var(--dark-pink); */
     justify-content: center;
-    
-    /* margin-bottom: 2.5rem; */
-
 }
 
 #top {
     margin-left: auto;
-    /* margin-right: 1rem; */
     cursor: pointer;
     padding-right: 4rem;
 }
 
 #top:hover {
-    /* color: var(--medium-pink); */
     text-decoration: underline;
-    /* text-decoration-color: var(--medium-pink); */
 }
