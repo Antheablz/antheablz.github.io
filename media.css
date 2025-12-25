@@ -84,7 +84,8 @@
 
 
 /* MOBILE VIEW */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) { */
+@media screen and (max-width: 800px) {
 
     body {
         font-size: var(--moble-font-base);
