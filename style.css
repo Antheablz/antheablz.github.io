@@ -95,7 +95,7 @@ a, .btn {
     width: 8rem;
     border-radius: 2rem;
     background-color: var(--extra-light-pink);
-    border: 2px solid black;
+    border: var(--black-outline);
 }
 
 .btn:hover {
