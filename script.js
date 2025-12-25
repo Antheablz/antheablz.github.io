@@ -8,21 +8,31 @@ function toggleMenu() {
     body.classList.toggle("blur")
 }
 
+
 function openDialog(dialog_id) {
     let dialog = document.getElementById(dialog_id);
     let body = document.getElementById("blur-container");
 
     dialog.showModal();
     body.classList.toggle("blur");
-    console.log('testing');
+    // console.log('testing');
+
+    dialog.style.overflowY = "scroll";
+    dialog.style.overscrollBehaviorY = "contain";
+    dialog.scrollTop = 0;
+    
 }
 
 function closeDialog(dialog_id) {
     let dialog = document.getElementById(dialog_id);
     let body = document.getElementById("blur-container");
+
+    // let dialogContainer = document.getElementsByClassName("dialog-container");
+    // dialogContainer[0].scrollTop = 0;
     
     body.classList.toggle("blur");
     dialog.close();
+
 }
 
 function scrollToStart() {

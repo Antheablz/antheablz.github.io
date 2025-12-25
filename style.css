@@ -96,6 +96,7 @@ a, .btn {
     border-radius: 2rem;
     background-color: var(--extra-light-pink);
     border: var(--black-outline);
+    color: black;
 }
 
 .btn:hover {
@@ -308,17 +309,17 @@ section {
     border: var(--black-outline);
 }
 
+.dialog-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+}
+
 .dialog li {
     display: list-item;
     list-style-type: disc;
     margin: 0px;
     color: black;
-}
-
-.dialog-container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    height: 100%;
 }
 
 .dialog-bullets{
