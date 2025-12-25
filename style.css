@@ -304,7 +304,8 @@ section {
     width: 70vw;
     background-color: var(--extra-light-pink);
     outline: none;
-    color: black;
+
+    border: var(--black-outline);
 }
 
 .dialog li {
