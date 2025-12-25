@@ -47,6 +47,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: black; /* or use the hex code #000000 */
+}
+
 .subtitle {
     font-size: var(--font-size-subtitle);
     font-weight: var(--font-bold);
