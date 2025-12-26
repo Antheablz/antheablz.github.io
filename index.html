@@ -37,39 +37,43 @@
     <div id="blur-container"> <!--BLUR CONTAINER START -->
 
         <section id="profile">
-            <div class="outer-container" style="background-color: var(--medium-pink); gap: 2.5rem;">
-                <h1 class="title">Hello, I'm Anthea Blais.</h1>
+            <div class="outer-container">
 
-                <!-- <div class="profile-name-outer">
-                    <h1>Hello!</h1>
-                    <h4>My name is</h4>
-                    <div class="profile-name-inner">
-                        <h1>Anthea Blais</h1>
+                <div class="profile-inner-container">
+                    <h1 class="title">Hello, I'm Anthea Blais.</h1>
+
+                    <!-- <div class="profile-name-outer">
+                        <h1>Hello!</h1>
+                        <h4>My name is</h4>
+                        <div class="profile-name-inner">
+                            <h1>Anthea Blais</h1>
+                        </div>
+                    </div>
+                    -->
+
+
+                    <p class="subtitle">I'm a recent Computer Science graduate and aspiring Software Developer!</p>
+                    <div class="btn-container" style="padding-top: 2.5rem;">
+                        <button class="btn" onclick="window.open('./assets/Resume.pdf')">Resume</button>
+                        <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
+                    </div>
+                    <div class="socials-container">
+                        <a href="http://www.linkedin.com/in/antheablais">
+                            <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon-large" draggable="false"/>
+                        </a>
+
+                        <a href="https://github.com/Antheablz">
+                            <img id="github-icon" src="./assets/github.png" alt="github img" class="icon-large" draggable="false"/>
+                        </a>
                     </div>
                 </div>
-                 -->
 
-
-                <p class="subtitle">I'm a recent Computer Science graduate and aspiring Software Developer!</p>
-                <div class="btn-container" style="padding-top: 2.5rem;">
-                    <button class="btn" onclick="window.open('./assets/Resume.pdf')">Resume</button>
-                    <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
-                </div>
-                <div class="socials-container">
-                    <a href="http://www.linkedin.com/in/antheablais">
-                        <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon-large" draggable="false"/>
-                    </a>
-
-                    <a href="https://github.com/Antheablz">
-                        <img id="github-icon" src="./assets/github.png" alt="github img" class="icon-large" draggable="false"/>
-                    </a>
-                </div>
             </div>
         </section>
 
     <!-- ABOUT SECTION -->
         <section id="about">
-            <div class="outer-container" style="background-color: var(--extra-light-pink);">
+            <div class="outer-container">
                 <h1 class="title">About Me</h1>
 
                 <div class="overview-container">
@@ -83,19 +87,23 @@
                 <div class="horizontal-container">
 
                     <div class="overview-container text-outline">
-                        <div class="horizontal-container">
-                            <img src="./assets/education.png" alt="education img" class="icon" draggable="false"/>
-                            <p class="body-bold">Education</p>
+                        <div style="margin: 1.5rem;">
+                            <div class="horizontal-container">
+                                <img src="./assets/education.png" alt="education img" class="icon" draggable="false"/>
+                                <p class="body-bold">Education</p>
+                            </div>
+                            <p>B.Sc. Computer Science from University of Victoria</p>
                         </div>
-                        <p>B.Sc. Computer Science from University of Victoria</p>
                     </div>
 
                     <div class="overview-container text-outline">
-                        <div class="horizontal-container">
-                            <img src="./assets/experience.png" alt="experience img" class="icon" draggable="false"/>
-                            <p class="body-bold">Skills</p>
+                        <div style="margin: 1.5rem;">
+                            <div class="horizontal-container">
+                                <img src="./assets/experience.png" alt="experience img" class="icon" draggable="false"/>
+                                <p class="body-bold">Skills</p>
+                            </div>
+                            <p>C, Python, C++, JavaScript, HTML, CSS, Git, Linux, PostgreSQL, SQLite </p>
                         </div>
-                        <p>C, Python, C++, JavaScript, HTML, CSS, Git, Linux, PostgreSQL, SQLite </p>
                     </div>
 
                 </div>
@@ -105,7 +113,7 @@
 
         <!-- EXPERIENCE SECTION -->
         <section id="experience">
-            <div class="outer-container" style="background-color: var(--medium-pink); padding: 2.5%;">
+            <div class="outer-container">
                 <h1 class="title">Work Experience</h1>
 
                 <div class="experience-inner-container" onclick="openDialog('nrc-dialog')">
@@ -153,12 +161,12 @@
 
         <!-- PROJECTS SECTION -->
         <section id="projects">
-            <div class="outer-container" style="background-color: var(--extra-light-pink); padding: 2.5%;">
+            <div class="outer-container">
                 <h1 class="title">Projects</h1>
 
-                <div class ="projects-grid-outer"> 
+                 <div class ="projects-grid-outer"> 
                     <div class="projects-grid-item">
-                        <p class="header">Password Manager</p>
+                       <p class="header">Password Manager</p>
                         <p class="body-small body-bold">Jan 2025 - Present</p>
                         <p class="projects-desc">Developing a Python application for secure password storage. Implements PostgreSQL database integration 
                             and an intuitive Tkinter GUI for password entry, retrieval, and management.</p>
@@ -207,17 +215,16 @@
                                 <button class="btn">GitHub</button>
                             </a>
                         </div>
-                        
-                    </div>
+                    </div> 
 
-                </div>
+                </div> 
 
             </div>
         </section>
 
         <!-- CONTACT SECTION -->
         <section id="contact">
-            <div class="outer-container" style="background-color: var(--medium-pink);">
+            <div class="outer-container">
                 <h1 class="title">Contact</h1>
             </div>
             <!-- <h1 class="title">Contact</h1>
