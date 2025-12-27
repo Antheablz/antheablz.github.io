@@ -162,7 +162,6 @@
 
     .text-outline {
         border-radius: 30px;
-        /* padding: 10%; */
         border: var(--black-outline);
         cursor: default;
         width: 70vw;
@@ -170,13 +169,14 @@
 
 
     /* MOBILE EXPERIENCE */
-    .experience-inner-container {
+    .experience-grid-outer {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 85%;
+        margin: 0.5rem;
+    }
+
+    .experience-grid-item {
+        padding: 0.5rem;
     }
 
     .experience-desc {
@@ -184,8 +184,10 @@
     }
 
     .experience-headers {
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+        width: auto;
+        /* align-items: center; */
+        /* justify-content: center; */
     }
 
     .experience-btn {
