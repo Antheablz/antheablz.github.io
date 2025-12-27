@@ -91,6 +91,11 @@
         font-size: var(--moble-font-base);
     }
 
+    section {
+        display: flex;
+        margin: 0.5rem;
+    }
+
     .title {
         font-size: var(--mobile-font-title);
         font-weight: var(--font-bold);
@@ -101,9 +106,15 @@
         font-weight: var(--font-bold);
     }
 
-    section {
+    .grid-outer {
         display: flex;
+        flex-direction: column;
         margin: 0.5rem;
+    }
+
+    .grid-item {
+        padding: 0.5rem;
+        gap: 0.5rem;
     }
 
     /* MOBILE BUTTONS */
@@ -165,17 +176,6 @@
 
 
     /* MOBILE EXPERIENCE */
-    .experience-grid-outer {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
-    }
-
-    .experience-grid-item {
-        padding: 0.5rem;
-        gap: 0.5rem;
-    }
-
     .experience-desc {
         display: none;
     }
@@ -183,25 +183,10 @@
     .experience-headers {
         text-align: center;
         width: auto;
-        /* align-items: center; */
-        /* justify-content: center; */
     }
 
     .experience-btn {
         display: flex;
-    }
-
-     /* MOBILE PROJECTS */
-    .projects-grid-outer {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
-        /* gap: 0.5rem; */
-    }
-
-    .projects-grid-item {
-        padding: 0.5rem;
-        gap: 0.5rem;
     }
 
 }
