@@ -39,28 +39,3 @@ function scrollToStart() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-/*
-function checkInputFields() {
-    let form = document.getElementById("contact-form");
-    let input_fields = document.getElementsByClassName("contact-test");
-    let err_msg = document.getElementsByClassName("err-msg");
-    let num_errs = 0;
-
-    for(let i = 0; i < input_fields.length(); i++){
-        if (input_fields[i] == "") {
-            err_msg[i].style.visibility = "visible";
-            num_errs ++;
-        }
-    }
-
-    if (num_errs == 0) {
-        form.submit();
-        console.log("submitted");
-    }
-}
-*/
-
-
-
-

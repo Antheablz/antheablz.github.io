@@ -393,29 +393,6 @@ a:hover {
     background-color: var(--medium-pink);
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 1rem;
-    margin: 3rem;
-}
-
-.contact-text {
-    resize: none;
-    width: 100%;
-}
-
-.contact-text:focus {
-    outline: 1.5px solid var(--dark-pink);
-}
-
-.err-msg {
-    text-align: left;
-    color: red;
-    visibility: hidden;
-}
-
 
 /* FOOTER */
 .footer {
