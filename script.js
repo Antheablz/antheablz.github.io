@@ -15,7 +15,6 @@ function openDialog(dialog_id) {
 
     dialog.showModal();
     body.classList.toggle("blur");
-    // console.log('testing');
 
     dialog.style.overflowY = "scroll";
     dialog.style.overscrollBehaviorY = "contain";
